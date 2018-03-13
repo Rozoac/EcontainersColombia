@@ -115,7 +115,7 @@ export class ContenedoresService {
       img_0: "assets/imgs/contenedores/refrigerado-0.jpg",
       img: "assets/imgs/contenedores/refrigerado-1.jpg",
       img_1: "assets/imgs/contenedores/refrigerado-2.jpg",
-      img_2: "assets/imgs/2.jpg",
+      img_2: "assets/imgs/refrigerado_plano.jpg",
       img_3: "assets/imgs/contenedores/refrigerado-3.jpg",
       img_4: "assets/imgs/contenedores/refrigerado-4.jpg",
       vinculo: "Más Información",

@@ -17,7 +17,7 @@ $errors = '';
 
 
     $email_from = "talento@econtainerscolombia.com";
-		$email_to = "rozoacg@gmail.com";
+		$email_to = "talento@econtainerscolombia.com";
 		$email_subject = "Nuevo mensaje Talento (Página Web) ";
 
 		$email_message = "Nuevo mensaje:\n\n";

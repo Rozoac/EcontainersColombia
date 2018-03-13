@@ -52,10 +52,7 @@
                 <option>Santa Marta</option>
                 <option>Villavicencio</option>
               </select>
-
               </div>
-            </div>
-            <div class="row">
               <div class="col-sm-12 col-lg-6">
                 <input type="text" name="celular" formControlName="cel" class="form-control" required placeholder="Celular" [(ngModel)]="message.celular">
                 <div *ngIf="(forma.controls['cel'].errors?.required)&& forma.get('cel').touched" class="form-control-feedback">
@@ -72,8 +69,6 @@
                 <option>Contenedores Refrigerados</option>
               </select>
               </div>
-            </div>
-            <div class="row">
               <div class=" col-lg-6">
                 <input type="email" class="form-control" name="email" formControlName="email" placeholder="Correo Electronico" [(ngModel)]="message.email">
                 <div class="form-control-feedback">
@@ -84,12 +79,20 @@
                   <option>Alquiler</option>
                 </select>
               </div>
+
               <div class="col-lg-6">
                   <textarea class="form-control" rows="3" placeholder="Mensaje" name="message" formControlName="mensaje" [(ngModel)]="message.message"></textarea>
-                  <button [disabled]="!forma.valid"  type="submit" class="btn btn-primary submit-1">ENVIAR<i class="fas fa-arrow-right"></i></button>
+
+                </div>
+                <div class="col-lg-12 form-check">
+                  <input type="checkbox" class="form-check-input" required formControlName="autorizo">
+                <a href="https://econtainerscolombia.com/politicas.pdf" target="_blank">  <label class="form-check-label"  for="exampleCheck1"><a class="autorizo" href="https://econtainerscolombia.com/autorizacion.pdf" target="_blank">Aviso de autorización:</a> Autorizo el tratamiento de mis datos personales</label></a>
+                </div>
+                <div class="col align-self-center">
+                  <button [disabled]="!forma.valid"  type="submit" class="btn btn-primary submit-1 ">ENVIAR<i class="fas fa-arrow-right"></i></button>
+                </div>
               </div>
-            </div>
-          </div>
+              </div>
         </form>
       </div>
     </div>
